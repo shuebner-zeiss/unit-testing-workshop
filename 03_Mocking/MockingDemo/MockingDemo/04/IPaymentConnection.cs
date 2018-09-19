@@ -6,6 +6,7 @@ namespace MockingDemo._04
 {
     public interface IPaymentConnection
     {
-        void MakeCreditCardPayment(string creditCardNumber, decimal amount);
+        /// <returns>status code, -1 for error</returns>
+        int MakeCreditCardPayment(string creditCardNumber, decimal amount);
     }
 }

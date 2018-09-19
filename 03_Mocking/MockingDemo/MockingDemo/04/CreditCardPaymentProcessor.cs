@@ -13,9 +13,15 @@ namespace MockingDemo._04
             _paymentConnection = paymentConnection;
         }
 
-        public void ProcessPayment(Subscription subscription)
+        public Result ProcessPayment(Subscription subscription)
         {
-            return;
+            return Result.Error;
+        }
+
+        public enum Result
+        {
+            Error,
+            Success,
         }
     }
 }
