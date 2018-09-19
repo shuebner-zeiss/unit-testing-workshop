@@ -52,6 +52,7 @@
     <Compile Include="02_Async_Exceptions\Customer.cs" />
     <Compile Include="02_Async_Exceptions\ICharger.cs" />
     <Compile Include="02_Async_Exceptions\ICustomerRepository.cs" />
+    <Compile Include="02_Async_Exceptions\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mocking2HandsOn._01
+namespace Mocking2Demo._02
 {
     public class BillingObserver
     {
@@ -10,10 +10,7 @@ namespace Mocking2HandsOn._01
 
         public void StartObserving()
         {
-        }
 
-        public void StopObserving()
-        {
         }
     }
 }

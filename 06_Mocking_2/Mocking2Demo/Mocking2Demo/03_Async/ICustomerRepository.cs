@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mocking2HandsOn._02
+namespace Mocking2Demo._03
 {
     public interface ICustomerRepository
     {
-        IEnumerable<Customer> GetChargableCustomers();
+        IEnumerable<Customer> GetAll();
     }
 }

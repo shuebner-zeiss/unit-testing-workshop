@@ -7,12 +7,11 @@ namespace Mocking2HandsOn._02
 {
     public interface ICharger
     {
-        Task<Result> ChargeAsync(Customer debitor);
+        /// <exception cref="ChargingFailedException" />
+        Task ChargeAsync(Customer debitor);
     }
 
-    public enum Result
+    public class ChargingFailedException : Exception
     {
-        Error,
-        Success,
     }
 }
