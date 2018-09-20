@@ -13,10 +13,6 @@ namespace MockingDemo._03
 
         public void SubmitForm(Form form)
         {
-            if (form.IsValid)
-            {
-                this.billingSystem.Process();
-            }
         }
 
         public class Form

@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MockingHandsOn;
-using MockingHandsOn._02;
+using MockingDemo._06;
 using Moq;
 
-namespace MockingHandsOnTests._02
+namespace MockingDemoTests._06
 {
     [TestClass]
     public class SubscriptionRepositoryTests
     {
+        private SubscriptionRepository subscriptionRepository;
+
         private readonly Mock<IDatabase> databaseMock = new Mock<IDatabase>();
 
-        private SubscriptionRepository subscriptionRepository;
+        private readonly Mock<IDatabase> storageMock = new Mock<IDatabase>();
 
         [TestInitialize]
         public void Setup()
@@ -24,12 +21,12 @@ namespace MockingHandsOnTests._02
         }
 
         [TestMethod]
-        public void Save_SavesMappedSubscriptionDbo___WithMoqItIs()
+        public void Save_SavesMappedDboInDatabase___WithMoqItIs()
         {
         }
 
         [TestMethod]
-        public void Save_SavesMappedSubscriptionDbo___WithMoqCallbackAndAssertions()
+        public void Save_SavesMappedDboInDatabase___WithMoqCallbackAndAssertions()
         {
         }
     }

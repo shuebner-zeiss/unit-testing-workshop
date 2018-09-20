@@ -31,13 +31,11 @@ namespace MockingDemoTests._04
         [TestMethod]
         public void Process_WhenPaymentConnectionReturnsStatusCodeMinusOne_ReturnsError()
         {
-
         }
 
         [TestMethod]
         public void Process_WhenPaymentConnectionReturnsPositiveStatusCode_ReturnsSuccess()
         {
-
         }
     }
 }

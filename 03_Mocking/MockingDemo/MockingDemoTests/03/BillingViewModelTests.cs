@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MockingDemo._03;
 using Moq;
+using static MockingDemo._03.BillingViewModel;
 
 namespace MockingDemoTests._03
 {

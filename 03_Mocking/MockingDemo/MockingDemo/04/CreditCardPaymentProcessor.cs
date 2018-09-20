@@ -17,11 +17,11 @@ namespace MockingDemo._04
         {
             return Result.Error;
         }
+    }
 
-        public enum Result
-        {
-            Error,
-            Success,
-        }
+    public enum Result
+    {
+        Error,
+        Success,
     }
 }

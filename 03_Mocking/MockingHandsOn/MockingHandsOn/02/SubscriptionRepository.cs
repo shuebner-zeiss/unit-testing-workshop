@@ -15,14 +15,14 @@ namespace MockingHandsOn._02
             this.db = db;
         }
 
-        public void Save(Subscription user)
+        public void Save(Subscription subscription)
         {
         }
     }
 
     public interface IDatabase
     {
-        void Save(SubscriptionDbo user);
+        void Save(SubscriptionDbo subscriptionDbo);
     }
 
     public class SubscriptionDbo

@@ -20,7 +20,7 @@ namespace MockingDemoTests._01
 
         [TestMethod]
         public void IsSubscribed_WhenStatusSourceStatusIsUnsubscribed_ReturnsFalse()
-        {            
+        {
         }
     }
 }

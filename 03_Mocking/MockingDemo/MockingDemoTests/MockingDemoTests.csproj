@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="06\DataSeederTests.cs" />
+    <Compile Include="06\SubscriptionRepositoryTests.cs" />
     <Compile Include="04\CreditCardPaymentProcessorTests.cs" />
     <Compile Include="03\BillingViewModelTests.cs" />
     <Compile Include="02\SubscriptionViewModelTests.cs" />

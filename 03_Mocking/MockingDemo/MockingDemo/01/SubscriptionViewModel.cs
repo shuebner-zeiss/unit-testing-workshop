@@ -13,7 +13,6 @@ namespace MockingDemo._01
 
         public bool IsSubscribed()
         {
-            return false;
         }
     }
 }

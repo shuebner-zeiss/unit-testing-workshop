@@ -20,7 +20,7 @@ namespace MockingHandsOn._01
 
         public decimal CalculatePrice(Customer customer, Subscription subscription)
         {
-            return 0m;
+            return 0;
         }
     }
 
