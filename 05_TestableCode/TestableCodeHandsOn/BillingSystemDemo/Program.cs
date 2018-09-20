@@ -1,7 +1,6 @@
 ﻿namespace BillingSystemDemo
 {
     using System;
-    using Autofac;
     using DIBillingSystem;
     using DIBillingSystem.Models;
     using DIBillingSystem.Repositories;
@@ -20,17 +19,12 @@
             db.Customers.Add(new Customer { Id = Guid.NewGuid(), Name = "Maggie Musterman" });
             db.Customers.Add(new Customer { Id = Guid.NewGuid(), Name = "Some Dude" });
 
-            // Replace this by AUTOFAC
+            // ----------------------------------------------------------------
+            // Optimize the code below ...
             var billingSystem = new BillingSystem(db, new CreditCardCharger());
             billingSystem.Init(); // bad!
-
-            /*
-             * USE AUTOFAC HERE!!
-             *
-             * var billingSystem = container.Resolve<BillingSystem>();
-             */
-
             billingSystem.Process();
+            // ----------------------------------------------------------------
 
             Console.WriteLine();
             Console.WriteLine("Good bye! See you next time!");
