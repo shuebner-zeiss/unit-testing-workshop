@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Mocking2Demo._02
 {
-    public interface IBillingSystem
+    public interface INotifier
     {
-        void Process();
+        event EventHandler<string> SomeEvent;
     }
 }

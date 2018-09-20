@@ -13,7 +13,7 @@ namespace Mocking2Demo._01
 
         public PaymentResult ProcessPayment(Subscription subscription)
         {
-            return PaymentResult.Success;
+            return PaymentResult.Error;
         }
 
         public enum PaymentResult

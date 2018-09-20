@@ -7,7 +7,7 @@ using Moq;
 namespace Mocking2HandsOnTests._01
 {
     [TestClass]
-    public class UserViewModelTests
+    public class BillingObserverTests
     {
         private readonly Mock<IBillingSystem> billingSystemMock = new Mock<IBillingSystem>();
 
@@ -19,6 +19,21 @@ namespace Mocking2HandsOnTests._01
         public void Setup()
         {
             observer = new BillingObserver(billingSystemMock.Object, billingTriggererMock.Object);
+        }
+
+        [TestMethod]
+        public void BeforeStartObserving_WhenBillingDueIsRaised_DoesNotCallBillingSystem()
+        {
+        }
+
+        [TestMethod]
+        public void AfterStartObserving_WhenBillingDueIsRaised_CallsBillingSystemProcess()
+        {
+        }
+
+        [TestMethod]
+        public void AfterStartObservingThenStopObserving_WhenBillingDueIsRaised_DoesNotCallBillingSystem()
+        {
         }
     }
 }

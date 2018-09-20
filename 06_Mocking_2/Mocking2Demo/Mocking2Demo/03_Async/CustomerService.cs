@@ -5,21 +5,18 @@ using System.Threading.Tasks;
 
 namespace Mocking2Demo._03
 {
-    public class BillingSystem
+    public class CustomerService
     {
-        private readonly ICharger charger;
-
         private readonly ICustomerRepository customerRepository;
 
-        public BillingSystem(ICharger charger, ICustomerRepository customerRepository)
+        public CustomerService(ICustomerRepository customerRepository)
         {
-            this.charger = charger;
             this.customerRepository = customerRepository;
         }
 
-        public Task<Result> ProcessAsync()
+        public Task ChangeNameAsync(Guid id, string newName)
         {
-            return Task.FromResult(Result.Success);
+            return Task.CompletedTask;
         }
     }
 }

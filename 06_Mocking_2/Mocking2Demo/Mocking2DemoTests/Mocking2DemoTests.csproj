@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="03_Async\BillingSystemTests.cs" />
-    <Compile Include="02_Events\BillingObserverTests.cs" />
+    <Compile Include="03_Async\CustomerServiceTests.cs" />
+    <Compile Include="02_Events\ObserverTests.cs" />
     <Compile Include="01_Exceptions\CreditCardPaymentProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

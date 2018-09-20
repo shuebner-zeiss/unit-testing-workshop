@@ -1,7 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Mocking2Demo;
 using Mocking2Demo._01;
 using Moq;
+using static Mocking2Demo._01.CreditCardPaymentProcessor;
 
 namespace Mocking2DemoTests._01
 {

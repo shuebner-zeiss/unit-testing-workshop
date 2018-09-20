@@ -24,5 +24,15 @@ namespace MockingHandsOnTests._02
         {
             billingSystem = new BillingSystem(chargerMock.Object, repoMock.Object);
         }
+
+        [TestMethod]
+        public async Task Process_CallsChargeForAllCustomersReturnedByTheRepo()
+        {
+        }
+
+        [TestMethod]
+        public async Task Process_CallsChargeForAllCustomersInParallel()
+        {
+        }
     }
 }

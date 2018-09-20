@@ -19,7 +19,7 @@ namespace Mocking2HandsOn._02
 
         public Task<Result> ProcessAsync()
         {
-            return Task.FromResult(Result.Success);
+            return Task.FromResult(Result.Error);
         }
     }
 }
